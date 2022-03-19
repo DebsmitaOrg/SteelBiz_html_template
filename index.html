@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/favicon.jpg">
     <title>Steel Biz</title>
 
     <!-- BOOTSTRAP 4.6.1 STYLESHEET -->
@@ -14,6 +15,7 @@
 
     <!-- CUSTOM STYLESHEET -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 
 
 
@@ -37,31 +39,268 @@
 
 </head>
 <body>
+
+
+    <!-------------------------------- LOADING SCREEN ---->
+        <div class="ajax_loader">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;display:block;" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <circle cx="50" cy="50" r="0" fill="none" stroke="#000000" stroke-width="2">
+                    <animate attributeName="r" repeatCount="indefinite" dur="1s" values="0;40" keyTimes="0;1" keySplines="0 0.2 0.8 1" calcMode="spline" begin="0s"></animate>
+                    <animate attributeName="opacity" repeatCount="indefinite" dur="1s" values="1;0" keyTimes="0;1" keySplines="0.2 0 0.8 1" calcMode="spline" begin="0s"></animate>
+                </circle><circle cx="50" cy="50" r="0" fill="none" stroke="#fd5900" stroke-width="2">
+                    <animate attributeName="r" repeatCount="indefinite" dur="1s" values="0;40" keyTimes="0;1" keySplines="0 0.2 0.8 1" calcMode="spline" begin="-0.5s"></animate>
+                    <animate attributeName="opacity" repeatCount="indefinite" dur="1s" values="1;0" keyTimes="0;1" keySplines="0.2 0 0.8 1" calcMode="spline" begin="-0.5s"></animate>
+                </circle>
+            </svg>
+        </div>
+    <!-------------------------------- LOADING SCREEN ---->
     
 
-    <header id="header">
+    <!----------------------------------------- HEADER -->
+    <header id="header" class="bg-clr-secondary">
         <div class="container">
             <div class="row align-items-center">
 
-                <div class="col-md-3">
-                    <div class="logo">
-                        <div class="image-wrapper"><img src="assets/images/logo_dark.png" alt="" class="w-100"></div>
-                    </div>
+                <div class="col-md-2 col-6 order-2 order-md-1">
+                    <a href="#" class="logo image-wrapper">
+                        <img src="assets/images/logo_light.png" alt="">
+                    </a>
                 </div>
 
 
-                <div class="col-md-6">
-                    <div class="text-center">Menu goese here</div>
+                <div class="col-xl-8 col-md-2 col-6 order-3 order-xl-2 text-right text-xl-left">
+                    <nav class="header-nav">
+                        <a href="javascript:void(0)" id="menuClose" class="fas fa-times d-flex d-xl-none"></a>
+
+                        <ul>
+                            <li><a href="#" class="nav-item active">Home</a></li>
+                            <li><a href="#" class="nav-item">About</a></li>
+                            <li class="has-child">
+                                <a href="#" class="nav-item">Trading Sector</a>
+                                <ul>
+                                    <li><a href="#">Register as a Trader</a></li>
+                                    <li><a href="#">Register as a Customer</a></li>
+                                    <li><a href="#">Trading Page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="nav-item">Products</a></li>
+                            <li><a href="#" class="nav-item">Current Price</a></li>
+                            <li><a href="#" class="nav-item">Future Expectation</a></li>
+                        </ul>
+                    </nav>
+
+
+                    <a href="javascript:void(0)" id="menuOpen" class="fas fa-bars d-inline-flex d-xl-none"></a>
                 </div>
 
 
-                <div class="col-md-3">
-                    <div class="text-right">Contact Number</div>
+                <div class="col-xl-2 col-md-8 order-1 order-md-2 order-xl-3">
+                    <a href="tel:+919898989898" class="contact-no d-block text-center text-xl-right">
+                        <i class="fas fa-phone-alt text-clr-primary"></i>
+                        <span>+91 98989 89898</span>
+                    </a>
                 </div>
 
             </div>
         </div>
     </header>
+    <!----------------------------------------- /HEADER -->
+    
+    
+    
+
+    <main>
+        this is content
+    </main>
+    
+    
+    
+    <!----------------------------------------- FOOTER -->
+    <footer id="footer">
+        <div class="top">
+            <div class="image-wrapper"><img src="assets/images/footer-design.png" alt="" class="w-100"></div>
+
+            <div class="content bg-clr-primary">
+                <div class="container">
+                    <div class="icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+
+                    <div class="title display-4">
+                        Showcase your products!
+                    </div>
+
+                    <div class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate maiores mollitia numquam, optio, vero eos nemo incidunt sapiente corporis impedit sunt asperiores pariatur harum et tempora. Nobis, dolorem aperiam.
+                    </div>
+
+                    <div class="buttons mt-4">
+                        <a href="#" class="btn btn-light">Become a Vendor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="middle bg-clr-secondary">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="inner-content h-100 border-bottom">
+                            <ul class="big-menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Vison & Values</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">FAQs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-6">
+                        <div class="inner-content h-100 border-bottom text-center mb-4">
+                            <a href="#" class="image-wrapper"><img src="assets/images/Logo_light.png" alt=""></a>
+                            
+                            <div class="small-desc text-light mt-4 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nihil, provident maxime exercitationem, voluptate beatae nobis rerum pariatur, natus id veritatis corporis amet sed repellendus accusantium porro incidunt possimus quae!</div>
+
+                            <a href="#" class="link">Read More...</a>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="col-lg-3">
+                        <div class="inner-content h-100 border-bottom text-center">
+                            <div class="foot-title text-light">Follow us on Social Media</div>
+
+                            <ul class="social">
+                                <li><a href="#" class="fab fa-facebook-f"></a></li>
+                                <li><a href="#" class="fab fa-twitter"></a></li>
+                                <li><a href="#" class="fab fa-instagram"></a></li>
+                                <li><a href="#" class="fab fa-whatsapp"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row mt-5">
+                    <div class="col-lg-3">
+                        <div class="inner-content">
+                            <div class="h1 font-weight-bold text-clr-primary pr-5 pl-5 pl-lg-0 text-center text-lg-left mb-5">Digital Market place for steel industry.</div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6">
+
+                        <div class="row">
+                            <div class="col-xl-4 text-center text-xl-left">
+                                <div class="menu menu1">
+                                    <div class="foot-title">Carbon Steel</div>
+                                    <ul>
+                                        <li><a href="#" class="link">Flat Carbon Steel</a></li>
+                                        <li><a href="#" class="link">Long Carbon Steel</a></li>
+                                        <li><a href="#" class="link">Pipes & Tubes</a></li>
+                                        <li><a href="#" class="link">Finished Steel Products</a></li>
+                                        <li><a href="#" class="link">Steel Coils</a></li>
+                                        <li><a href="#" class="link">Steel Sheets</a></li>
+                                        <li><a href="#" class="link">Steel Sections</a></li>
+                                        <li><a href="#" class="link">Steel Rods</a></li>
+                                        <li><a href="#" class="link">Hot Rolled Steel</a></li>
+                                        <li><a href="#" class="link">Cold Rolled Steel</a></li>
+                                        <li><a href="#" class="link">Coated Steel</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-xl-4 text-center text-xl-left">
+                                <div class="menu menu2">
+                                    <div class="foot-title">Special Steel</div>
+                                    <ul>
+                                        <li><a href="#" class="link">Alloy Steel</a></li>
+                                        <li><a href="#" class="link">Stainless Steel</a></li>
+                                        <li><a href="#" class="link">Steel Square Bar</a></li>
+                                        <li><a href="#" class="link">Steel Rounded Bar</a></li>
+                                        <li><a href="#" class="link">Steel Flat Bar</a></li>
+                                        <li><a href="#" class="link">Steel Hexagon Bar</a></li>
+                                        <li><a href="#" class="link">Hot Forged Steel Bar</a></li>
+                                        <li><a href="#" class="link">Hot Rolled Steel Bar</a></li>
+                                        <li><a href="#" class="link">Cold Drawn Steel Bar</a></li>
+                                        <li><a href="#" class="link">Peeled Bar</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-xl-4 text-center text-xl-left">
+                                <div class="menu menu3">
+                                    <div class="foot-title">Industry</div>
+                                    <ul>
+                                        <li><a href="#" class="link">Automotive</a></li>
+                                        <li><a href="#" class="link">Mining</a></li>
+                                        <li><a href="#" class="link">Energy</a></li>
+                                        <li><a href="#" class="link">Marine Engineering</a></li>
+                                        <li><a href="#" class="link">Machinery & Engineering</a></li>
+                                        <li><a href="#" class="link">Tools & Modling</a></li>
+                                        <li><a href="#" class="link">Home Appliances</a></li>
+                                        <li><a href="#" class="link">Construction</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-3 text-center text-lg-left">
+                        <div class="foot-title">Contact Us</div>
+                        <ul class="contact-details">
+                            <li>
+                                <a href="#" class="link">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>+91 98989 98989</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>contact@steelbiz.co.in</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location: India</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="bottom bg-dark py-3">
+            <div class="container">
+                <div class="text-center text-light">
+                    &copy; 2022 SteelBiz. All Rights Reserved. | Designed, Developed & Maintained by <b style="color: #ee225e;">Moz Web Development</b>.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------------------------------------- /FOOTER -->
 
 
 </body>
