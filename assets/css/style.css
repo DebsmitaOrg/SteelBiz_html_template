@@ -190,7 +190,7 @@ body {
         z-index: 99999;
         top: 0;
     }
-    .sticky #header .header-nav > ul > li a {
+    .sticky #header .header-nav > ul > li > a {
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -247,6 +247,7 @@ body {
         transition: 0.2s;
         opacity: 0;
         pointer-events: none;
+        z-index: 9999;
     }
     #header .header-nav ul li > ul:hover,
     #header .header-nav ul li:hover > ul {
@@ -307,6 +308,86 @@ body {
         align-items: center;
     }
 /**************************************** /HEADER */
+
+
+
+
+
+
+
+/**************************************** HOME PAGE */
+    /* banner */
+        .home-banner {
+            position: relative;
+        }
+        .home-banner .owl-nav {
+            position: absolute;
+            z-index: 9999;
+            top: calc(50% - 50px);
+            left: 0;
+            transform: translateY(-50%);
+            right: 0;
+            display: grid;
+            justify-content: flex-end;
+            pointer-events: none;
+            margin-right: 20px;
+        }
+        .home-banner .owl-nav i {
+            width: 40px;
+            height: 40px;
+            display: grid;
+            border: 2px solid #fff;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 20px;
+            margin: 5px 0;
+            pointer-events: all;
+            transition: 0.2s;
+        }
+        .home-banner .owl-nav i:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+
+        .home-banner .item {
+            background-color: var(--clr-secondary);
+        }
+        .home-banner .item .row {
+            margin-bottom: 100px;
+            margin-top: -80px;
+        }
+        .home-banner .item .left {
+            padding-left: 10%;
+        }
+        .home-banner .item .right .image-wrapper {
+            width: 100%;
+            height: 90vh;
+            overflow: hidden;
+            position: relative;
+            /* top: 0; */
+            bottom: -100px;
+        }
+        .home-banner .item .right .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .home-banner .banner-title b {
+            color: transparent;
+            -webkit-text-stroke: 2px var(--clr-primary);
+        }
+        
+        .home-banner .banner-subtitle {
+            letter-spacing: 5px;
+        }
+    /* /banner */
+/**************************************** /HOME PAGE */
+
+
+
 
 
 
@@ -404,6 +485,9 @@ body {
         text-transform: uppercase;
         text-decoration: none;
         font-size: 12px;
+        line-height: 16px;
+        display: block;
+        margin: 10px 0;
         letter-spacing: 2px;
     }
     #footer a.link:hover {
