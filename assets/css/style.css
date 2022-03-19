@@ -1,1 +1,23 @@
 /* CSS */
+
+
+
+:root {
+    --clr-primary: ;
+    --clr-secondary: ;
+
+    --font-body: 'Roboto', sans-serif;
+    --font-heading: 'Anton', sans-serif;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-body {
+    font-family: var(--font-body);
+}
+.font-heading {
+    font-family: var(--font-heading);
+}
