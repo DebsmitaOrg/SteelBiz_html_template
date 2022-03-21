@@ -70,6 +70,67 @@
     }
 
 
+    .become-a-vendor .right .image-wrapper {
+        height: 400px;
+    }
+    .become-a-vendor .bigtitle,
+    .become-a-vendor .bigtitle span,
+    .become-a-vendor .bigtitle span.small {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+
+
+
+    .home .product-slider-wrapper,
+    .home .blog-slider-wrapper {
+        display: block;
+        position: relative;
+    }
+    .home .product-slider,
+    .home .product-slider-wrapper .product-nav,
+    .home .blog-slider,
+    .home .blog-slider-wrapper .blog-nav {
+        max-width: unset;
+        flex: unset;
+    }
+    .home .product-slider-wrapper .product-nav,
+    .home .blog-slider-wrapper .blog-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        pointer-events: none;
+    }
+    .home .product-slider-wrapper .product-nav span,
+    .home .blog-slider-wrapper .blog-nav span {
+        background-color: var(--clr-primary);
+        color: #fff;
+        pointer-events: all;
+    }
+    .home .product-slider-wrapper .product-nav span:hover,
+    .home .blog-slider-wrapper .blog-nav span:hover {
+        background-color: var(--clr-secondary);
+    }
+    .home .product-slider-wrapper .product-nav span.prev,
+    .home .blog-slider-wrapper .blog-nav span.prev {
+        transform: rotate(-90deg)
+    }
+    .home .product-slider-wrapper .product-nav span.next,
+    .home .blog-slider-wrapper .blog-nav span.next {
+        transform: rotate(-90deg)
+    }
+
+    .home .get-in-touch .vendors-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    
 
 
     #footer .middle .menu {
@@ -104,6 +165,7 @@
     }
     .home-banner .item .row {
         margin-top: 0;
+        margin-bottom: 0;
     }
     .home-banner .banner-title {
         font-size: 60px;
@@ -114,6 +176,17 @@
     .home-banner .banner-subtitle {
         font-size: 12px;
         letter-spacing: 8px;
+    }
+
+
+
+    .become-a-vendor {
+        padding: 50px 0;
+    }
+
+
+    .home .get-in-touch .vendors-grid {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 
@@ -168,6 +241,10 @@
         font-size: 30px;
     }
 
+    .home .get-in-touch .vendors-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
 
 
 
@@ -216,5 +293,15 @@
     }
     .home-banner .owl-nav i {
         margin: 5px;
+    }
+
+    .home .get-in-touch .vendors-grid {
+        grid-gap: 10px;
+    }
+    .home .get-in-touch .vendors-grid .vendor-item {
+        height: 100px;
+    }
+    .home .get-in-touch .vendors-grid .vendor-item img {
+        padding: 10px;
     }
 }
