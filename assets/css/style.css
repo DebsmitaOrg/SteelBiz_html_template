@@ -6,8 +6,9 @@
     --clr-primary: #fd5900;
     --clr-dark: #cc4700;
     --clr-secondary: #252521;
-    --clr-light: #feefa8;
-
+    /* --clr-light: #feefa8; */
+    --clr-light: #ffe35e;
+    
     --gradient: linear-gradient(
         45deg,
         #cb8a1e,
@@ -444,6 +445,19 @@ body {
         .home .about-us {
             position: relative;
         }
+        .home .about-us::before {
+            content: '';
+            height: 85px;
+            width: 20px;
+            background-image: url(../images/design.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 50%;
+            bottom: -80px;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
         .home .about-us::after {
             content: '';
             height: 80px;
@@ -497,6 +511,19 @@ body {
             background-repeat: no-repeat;
             background-attachment: fixed;
             position: relative;
+        }
+        .home .services::before {
+            content: '';
+            height: 85px;
+            width: 20px;
+            background-image: url(../images/design.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            z-index: 2;
         }
         .home .services::after {
             content: '';
@@ -552,6 +579,19 @@ body {
             background-color: var(--clr-secondary);
             padding: 100px 0;
             position: relative;
+        }
+        .become-a-vendor::before {
+            content: '';
+            height: 85px;
+            width: 20px;
+            background-image: url(../images/design.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 50%;
+            bottom: -80px;
+            transform: translateX(-50%);
+            z-index: 2;
         }
         .become-a-vendor::after {
             content: '';
@@ -727,6 +767,19 @@ body {
         .home .blog {
             padding: 150px 0 0;
             position: relative;
+        }
+        .home .blog::before {
+            content: '';
+            height: 85px;
+            width: 20px;
+            background-image: url(../images/design.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 50%;
+            bottom: -80px;
+            transform: translateX(-50%);
+            z-index: 2;
         }
         .home .blog::after {
             content: '';
@@ -909,6 +962,19 @@ body {
         padding: 100px 0;
         position: relative;
         z-index: 1;
+    }
+    #footer .middle::after {
+        content: '';
+        height: 55px;
+        width: 20px;
+        background-image: url(../images/design.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 50%;
+        top: -5px;
+        transform: translateX(-50%);
+        z-index: 2;
     }
     #footer .middle::before {
         content: '';
